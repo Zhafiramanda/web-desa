@@ -6,29 +6,44 @@ export const organization = {
       children: [],
     },
     {
-      name: "Bendahara Desa",
+      name: "Kaur TU dan Umum",
       children: [],
     },
     {
-      name: "Kepala Dusun",
-      children: [
-        {
-          name: "Dusun Buntar",
-          children: [],
-        },
-        {
-          name: "Dusun Mendak",
-          children: [],
-        },
-        {
-          name: "Dusun Candi",
-          children: [],
-        },
-        {
-          name: "Dusun Jengglong",
-          children: [],
-        },
-      ],
+      name: "Kaur Keuangan",
+      children: [],
+    },
+    {
+      name: "Kaur Perencanaan",
+      children: [],
+    },
+    {
+      name: "Kasi Pemerintahan",
+      children: [],
+    },
+    {
+      name: "Kasi Kesra",
+      children: [],
+    },
+    {
+      name: "Kasi Pelayanan",
+      children: [],
+    },
+    {
+      name: "Kadus Buntar",
+      children: [],
+    },
+    {
+      name: "Kadus Mendak",
+      children: [],
+    },
+    {
+      name: "Kadus Candi",
+      children: [],
+    },
+    {
+      name: "Kadus Jengglong",
+      children: [],
     },
   ],
 };
