@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import StrukturOrganisasi from "./pages/StrukturOrganisasi";
+import SejarahDesa from "./pages/SejarahDesa";
+import Agenda from "./pages/Agenda";
+import PotensiDesa from "./pages/PotensiDesa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow container mx-auto p-4">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/struktur-organisasi"
+              element={<StrukturOrganisasi />}
+            />
+            <Route path="/sejarah-desa" element={<SejarahDesa />} />
+            <Route path="/agenda" element={<Agenda />} />
+            <Route path="/potensi-desa" element={<PotensiDesa />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
