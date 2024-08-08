@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Menu } from "@headlessui/react";
-import { Link as ScrollLink } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";

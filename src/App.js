@@ -6,7 +6,9 @@ import HomePage from "./components/HomePage";
 import StrukturOrganisasi from "./pages/StrukturOrganisasi";
 import SejarahDesa from "./pages/SejarahDesa";
 import Agenda from "./pages/Agenda";
-import PotensiDesa from "./pages/PotensiDesa";
+import PotensiDesa from "./components/PotensiDesa";
+import PotensiDetail from "./pages/PotensiDetail";
+// import ArticlePage from "./pages/ArticlePage";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
             <Route path="/sejarah-desa" element={<SejarahDesa />} />
             <Route path="/agenda" element={<Agenda />} />
             <Route path="/potensi-desa" element={<PotensiDesa />} />
+            <Route path="/potensi/:id" element={<PotensiDetail />} />
           </Routes>
         </main>
         <Footer />

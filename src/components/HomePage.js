@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { Link } from "react-router-dom";
 import image1 from "../assets/images/image1.jpeg";
 import image2 from "../assets/images/image2.jpeg";
 import image3 from "../assets/images/image3.jpeg";
@@ -48,13 +49,9 @@ const HomePage = () => {
               dan menyambut baik para pengunjung yang datang untuk menikmati
               keindahan alam dan budaya yang kaya. Desa ini memiliki warisan
               budaya yang kaya, dengan tradisi dan situs sejarah yang terjaga
-              dengan baik. Setiap tahunnya, desa Buntar mengadakan berbagai
-              festival dan acara budaya yang menarik banyak wisatawan. Produk
-              kerajinan lokal seperti anyaman dan kerajinan tangan lainnya juga
-              menjadi daya tarik tersendiri bagi para pengunjung. Desa Buntar
-              juga menawarkan berbagai kegiatan luar ruangan seperti hiking,
-              bersepeda, dan petualangan lainnya yang dapat dinikmati oleh semua
-              kalangan. Dengan keindahan alamnya yang luar biasa dan
+              dengan baik. Desa Buntar juga banyak disi dengan kegiatan pekan
+              olahraga desa dimana mulai dari pertandingan badminton, volly, dan
+              sepak bola dan. Dengan keindahan alamnya yang luar biasa dan
               masyarakatnya yang hangat, Desa Buntar menjadi destinasi yang
               sempurna untuk melepaskan diri dari hiruk-pikuk kehidupan kota dan
               menikmati ketenangan alam.
@@ -134,11 +131,33 @@ const HomePage = () => {
         </section>
       </Element>
 
+      {/* Video Profile Section */}
+      <Element name="video-profile">
+        <section id="video-profile" className="container mx-auto py-16 px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold text-center mb-8 text-green-700">
+              Video Profil Desa
+            </h2>
+            <div className="flex justify-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/OgMZrbofoeU?si=r6LQ1oJvmCni2vJj"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </Element>
+
       {/* Contact Section */}
       <Element name="kontak">
         <section id="kontak" className="container mx-auto py-16 px-4">
           <h2 className="text-3xl font-bold text-center mb-8 text-green-700">
-            Kontak informasi
+            Kontak Informasi
           </h2>
           <div className="flex flex-col items-center">
             <p className="mb-2">

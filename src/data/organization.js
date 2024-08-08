@@ -1,49 +1,56 @@
 export const organization = {
   name: "Kepala Desa",
+  color: "bg-purple-200",
   children: [
     {
+      name: "BPD",
+      color: "bg-purple-200",
+    },
+    {
       name: "Sekretaris Desa",
-      children: [],
-    },
-    {
-      name: "Kaur TU dan Umum",
-      children: [],
-    },
-    {
-      name: "Kaur Keuangan",
-      children: [],
-    },
-    {
-      name: "Kaur Perencanaan",
-      children: [],
+      color: "bg-green-200",
+      children: [
+        {
+          name: "Kaur Tata Usaha dan Umum",
+          color: "bg-red-200",
+        },
+        {
+          name: "Kaur Keuangan",
+          color: "bg-red-200",
+        },
+        {
+          name: "Kaur Perencanaan",
+          color: "bg-red-200",
+        },
+      ],
     },
     {
       name: "Kasi Pemerintahan",
-      children: [],
+      color: "bg-green-200",
     },
     {
-      name: "Kasi Kesra",
-      children: [],
+      name: "Kasi Kesejahteraan",
+      color: "bg-green-200",
     },
     {
       name: "Kasi Pelayanan",
-      children: [],
+      color: "bg-green-200",
     },
     {
-      name: "Kadus Buntar",
-      children: [],
+      name: "Kepala Dusun I",
+      color: "bg-green-200",
     },
     {
-      name: "Kadus Mendak",
-      children: [],
+      name: "Kepala Dusun II",
+      color: "bg-green-200",
     },
     {
-      name: "Kadus Candi",
-      children: [],
+      name: "Kepala Dusun III",
+      color: "bg-green-200",
     },
     {
-      name: "Kadus Jengglong",
-      children: [],
+      name: "Kepala Dusun IV",
+      color: "bg-green-200",
     },
   ],
 };
